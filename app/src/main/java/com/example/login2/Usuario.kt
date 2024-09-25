@@ -6,7 +6,7 @@ class Usuario (
     val correo: String,
     val telefono: String,
     val usuario: String,
-    val contraseña: String
+    val password: String
 ) {
     fun mostrarInformacion() {
         println("Nombres: $nombres")
