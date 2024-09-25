@@ -47,6 +47,7 @@ class LoginActivity : AppCompatActivity() {
             if (verificar(username, password)) {
                 //entonces el usuario existe en data.txt
                 val intent = Intent(this, HomeActivity::class.java)
+                intent.putExtra("user", username)
                 startActivity(intent)
             }
             else {
